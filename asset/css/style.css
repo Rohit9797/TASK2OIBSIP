@@ -1,0 +1,265 @@
+
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6cabb;
+    
+}
+
+header {
+    background-color: #ddd2c3;
+    background-size:cover;
+    padding: 10px 0;
+   
+    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    background-color: #a28d6f;
+    padding: 5px ;
+    border-radius: 5px;
+    margin: 5px;
+    color: #e2cece;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #35302d;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-left: 20px;
+    content:inherit ;
+}
+
+#hero {
+    background-image: url('../image/image3.jpg');/*/asset/image/image3.jpg*/
+    background-size:cover;
+    background-position:center;
+    color: #171515;
+    text-align: center;
+    padding: 150px 0;
+    height: 400px;
+    
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.highlight {
+    color: #ff6600;
+}
+
+.cta-button {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #4b443f;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display:inline-block;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .nav-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #212121;
+        margin: 5px 0;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .nav-toggle.active .bar {
+        background-color: #ff6600;
+    }
+
+    .nav-links.active {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        border-radius: 0 0 5px 5px;
+        z-index: 1;
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+}
+
+
+
+#about {
+    background-image:url('../image/image4.jpg');
+    /* background-position:center; */
+    background-size: cover;
+    height: 400px;
+    padding: 80px 0;
+    text-align: center;
+   
+    
+}
+
+.about-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+#services {
+    background-image:url('../image/image3.jpg');
+    /* background-color: #ddd2c3; */
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.service {
+    margin: 55px;
+    padding: 50px;
+    background-color: #d6cabb;
+    /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    display:inline-flexbox;
+    
+    
+}
+
+.service img {
+    max-width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+#contact {
+    background-color:#ddd2c3;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4b443f;
+}
+
+/* Add more styles for other sections as needed */
+
